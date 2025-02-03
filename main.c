@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <math.h>
 
+/* Task 4 */
 void nonStart(const char s1[], const char s2[]) {
     for (int i = 1; s1[i] != '\0'; i++) printf("%c", s1[i]);
     for (int i = 1; s2[i] != '\0'; i++) printf("%c", s2[i]);
 }
 
+/* Task 5 */
 void reverse(int arr[],  size_t n) {
     unsigned int left = 0, right = n - 1;
     while (left < right) {
@@ -18,6 +20,7 @@ void reverse(int arr[],  size_t n) {
     }
 }
 
+/* Task 6 */
 double mean(const int data[], size_t length) {
     if (length < 1) return 0.0;
     int sum = 0;
@@ -26,6 +29,8 @@ double mean(const int data[], size_t length) {
     }
     return (double) sum / length;
 }
+
+/* Task 7 */
 int max_abs(const int data[], size_t length) {
     int max = 0;
     for (int i = 0; i < length; i++) {
@@ -34,6 +39,7 @@ int max_abs(const int data[], size_t length) {
     return max;
 }
 
+/* Task 8 */
 size_t in_between(const int data[], size_t length, int val_1, int val_2) {
     size_t count = 0;
     for (int i = 0; i < length; i++) {
@@ -42,6 +48,7 @@ size_t in_between(const int data[], size_t length, int val_1, int val_2) {
     return count;
 }
 
+/* Task 9 */
 int minimum(const int data[][10], const size_t n) {
     int min = data[n][0];
     for (int i = 1; i < 10; i++) {
@@ -50,6 +57,7 @@ int minimum(const int data[][10], const size_t n) {
     return min;
 }
 
+/* Task 10 */
 size_t count_even(const int data [][7], const size_t n) {
     size_t count = 0;
     for (int i = 0; i < n; i++) {

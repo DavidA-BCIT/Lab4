@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+/* Task 2 */
 int main() {
     char name[100];
     scanf("%s", name);
