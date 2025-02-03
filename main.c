@@ -69,5 +69,31 @@ size_t count_even(const int data [][7], const size_t n) {
 }
 
 int main(void) {
+    // Task 4
+    nonStart("Hello", "world");
+    printf("\n");
+
+    // Task5
+    int arr[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    reverse(arr, 10);
+    for (int i = 0; i < 10; i++) {
+        printf("%d", arr[i]);
+    }
+    printf("\n");
+
+    // Task 6
+    printf("Mean: %lf\n", mean(arr, 10));
+
+    // Task 7
+    printf("Max abs: %d\n", max_abs(arr, 10));
+
+    // Task 8
+    printf("%llu\n", in_between (arr, 10, 6, 9));
+
+    // Task 9
+    printf("minimum:%d \n", minimum(arr, 10));
+
+    // Task 10
+    printf("count_even: %llu\n", count_even(arr, 10));
     return 0;
 }
